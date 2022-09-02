@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
+	xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce" lang="pt-br">
+
+<head>
+	<meta name="page" content="gopro-launch" page-id="gopro-launch" />
+	<meta charset="utf-8" />
+	<meta http-equiv="x-ua-compatible" content="ie=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Sorteio GoPro: Dia dos pais HERO10</title>
+	<vtex:contentPlaceHolder id="htmlSeo" />
+	<vtex:metaTags />
+
+
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+	<link rel="shortcut icon" sizes="16x16" href="/arquivos/favicon16x16.png" />
+	<link rel="shortcut icon" sizes="32x32" href="/arquivos/favicon32x32.png" />
+	<link rel="shortcut icon" sizes="64x64" href="/arquivos/favicon64x64.png" />
+	<link rel="shortcut icon" sizes="128x128" href="/arquivos/favicon128x128.png" />
+
+	<link rel="stylesheet" href="https://gopro.vteximg.com.br/arquivos/gopro--lp-launch.css" />
+	<!-- <link rel="stylesheet" href="https://agenciamagma.ecommercetools.com.br/sorteio-22.css?v=04" /> -->
+	<link rel="stylesheet" href="style.scss">
+</head>
+
+<body class="lp-launch">
+	<main>
+		<header class="lp-launch__header">
+			<div class="lp-launch__header-logo mobile-only">
+				<a href="https://www.goprobr.com/" target="_blank"><img src="./arquivos/logo-gopro.png"
+						alt="Go Pro" /></a>
+			</div>
+			<ul class="lp-launch__header__list">
+				<li class="lp-launch__header__item"><a href="#como-participar">Como <span>participar</span></a></li>
+				<li class="lp-launch__header__item"><a href="#premios">Prêmios</a></li>
+				<li class="lp-launch__header__item desktop-only"><a href="https://www.goprobr.com/" target="_blank"><img
+							src="./arquivos/logo-gopro.png" alt="Go Pro" /></a></li>
+				<li class="lp-launch__header__item"><a href="#calendario">Calendários</a></li>
+				<li class="lp-launch__header__item"><a href="#ganhadores">Ganhadores</a></li>
+			</ul>
+		</header>
+		<section class="lp-launch__image-background">
+			<div class="container">
+				<div class="lp-launch__descricao-banner col-lg-6 col-md-8 col-sm-12">
+					<div class="lp-launch__descricao-banner__cart">
+						<h1>SORTEIO</h1>
+						<div class="lp-launch__descricao-banner__cart__img-hero">
+							<img src="./arquivos/hero11_black.png" alt="hero 11 black">
+							<img id="camera" src="./arquivos/hero11_gopro.png" alt="hero 11 black" style="max-width:150%;" >
+						</div>
+
+					</div>
+					<div class="lp-launch__descricao-banner__descricao">
+						<p>Quer ganhar um kit exclusivo da <strong class="bold-green">HERO11 Black</strong>?</p>
+						<p>Participe do sorteio e concorra a <strong> xxxxx</strong>
+							<strong  class="bold-green"></strong> <strong>premios</strong>
+						</p>
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<div class="lp-launch__overlay"></div>
+		<section class="lp-launch__form">
+			<div class="container lp-launch__form__sorteio-formulario">
+				<div class="row">
+					<div class="col-12 lp-launch__form-formulario">
+						<form id="form-launch" method="POST" class="form-launch">
+							<div class="form-launch__close-form">
+								<i class="sprite sprite-fechar"></i>
+							</div>
+							<legend>
+								<strong>PREENCHA O FORMULÁRIO </strong>
+							</legend>
+							<div class="form-launch__group form-launch__social">
+								<p>
+									Não deixe de <strong>seguir nossas redes sociais</strong>
+									para estar dentro das diretrizes
+									do sorteio.
+								</p>
+								<ul>
+									<li>
+										<a href="https://www.instagram.com/goprobr/" target="_blank" title="Instagram">
+											<i class="sprite sprite-lp-instagram-black"></i>
+										</a>
+									</li>
+									<li>
+										<a href="https://www.facebook.com/GoProBrazil" target="_blank" title="Facebook">
+											<i class="sprite sprite-lp-facebook-black"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="form-launch__group">
+								<label for="form-launch-nome" class="form-launch__label">Nome</label>
+								<input type="text" class="form-launch__input form-launch__inputfield" name="name"
+									id="form-launch-nome" placeholder="Seu nome completo" />
+							</div>
+							<div class="form-launch__group">
+								<label for="form-launch-email" class="form-launch__label">E-mail </label>
+								<input type="text" class="form-launch__input form-launch__inputfield" name="email"
+									id="form-launch-email" placeholder="seuemail@mail.com.br" />
+							</div>
+							<div class="form-launch__group">
+								<label for="form-launch-cpf" class="form-launch__label">CPF</label>
+								<input type="text" class="form-launch__input form-launch__inputfield" name="CPF"
+									id="form-launch-cpf" placeholder="000.000.000-00" />
+							</div>
+							<div class="form-launch__group">
+								<label for="form-launch-data" class="form-launch__label">Data de Nascimento</label>
+								<input type="date" class="form-launch__input form-launch__inputfield birthDate"
+									name="birthDate" id="form-launch-data" placeholder="00 . 00 . 0000" min="1900-01-01"
+									max="2003-09-16" />
+							</div>
+							<div class="form-launch__group">
+								<label for="form-launch-telefone" class="form-launch__label">Telefone</label>
+								<input type="text" class="form-launch__input form-launch__inputfield telefone"
+									name="telefone" id="form-launch-telefone" placeholder="(00) 00000 0000" />
+							</div>
+							<div class="form-launch__group">
+								<label for="form-launch-instagram" class="form-launch__label">Instagram</label>
+								<input type="text" class="form-launch__input form-launch__inputfield instagram"
+									name="instagram" id="form-launch-instagram" placeholder="@seuuser" />
+							</div>
+							<div class="form-launch__group form-launch__termos">
+								<div class="">
+									<a href="#" target="_blank" class="form-launch__termos__button">Ler regulamento</a>
+
+								</div>
+								<div class="form-launch__termos__wrapper">
+									<input type="checkbox" class="form-launch__input form-launch__inputfield termos"
+										name="agreeTerms" id="form-launch-termos" />
+									<label for="form-launch-termos" class="form-launch__label">
+										<small>*</small>
+										Declaro que li e aceito
+										<span></span>
+									</label>
+								</div>
+							</div>
+							<input type="submit" name="submit" value="Cadastre-se" title="Cadastre-se"
+								id="associado-submit" class="form-launch__btn" />
+							<p class="form-message"></p>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="form-launch__termos__popup">
+			<div class="form-launch__termos__overlay"></div>
+			<div class="form-launch__termos__description">
+				<div class="form-launch__termos__title">
+					Regulamento
+				</div>
+				<a class="form-launch__termos__close" aria-label="Fechar">
+					<i class="sprite sprite-fechar"></i>
+				</a>
+				<div class="form-launch__termos__text">
+					<vtex:contentPlaceHolder id="termos" />
+				</div>
+			</div>
+		</div>
+		<section id="como-participar" class="lp-launch__join">
+			<div class="container">
+				<div class="lp-launch__join__title">Como participar</div>
+				<div class="lp-launch__join__wrapper">
+					<div class="lp-launch__join__list">
+						<div class="lp-launch__join__content">
+							<div class="lp-launch__join__step"><span>1</span></div>
+							<h3><strong>Inscreva-se</strong> <span class="lp-launch__join__content-date">até o dia
+									12/08
+									- 19h00* </span> <span class="lp-launch__join__content-date">horário de
+									brasília*</span></h3>
+							<p>Para participar, você precisa ser maior de 18 anos, morar no Brasil e preencher o
+								formulário
+								corretamente. Nós não poderemos alterar seus dados em caso de erro, combinado?</p>
+							<div
+								class="lp-launch__join__button lp-launch__join__button-form lp-launch__join__butom-cadastro">
+								Cadastre-se
+							</div>
+						</div>
+					</div>
+					<div class="lp-launch__join__list lp-launch__join__list-social">
+						<div class="lp-launch__join__step"><span>2</span></div>
+						<div class="lp-launch__join__list-social__wrapper">
+							<h3><strong>Siga a GoProBr</strong> <span>nas redes sociais</span></h3>
+							<p>Para acompanhar as novidades e estar dentro das regras do sorteio, siga a GoProBr no Instagram, Facebook e YouTube, combinado? </p>
+							<div class="lp-launch__join__list-social__itens">
+								<a href="https://www.instagram.com/goprobr/" target="_blank"><img
+										src="https://gopro.vteximg.com.br/arquivos/sorteio-22-ig.png"
+										alt="Instagram" /></a>
+								<a href="https://www.youtube.com/c/GoProBRA" target="_blank"><img
+										src="https://gopro.vteximg.com.br/arquivos/sorteio-22-yt.png"
+										alt="YouTube" /></a>
+								<a href="https://www.facebook.com/GoProBrazil" target="_blank"><img
+										src="https://gopro.vteximg.com.br/arquivos/sorteio-22-fb.png"
+										alt="Facebook" /></a>
+							</div>
+						</div>
+					</div>
+					<div class="lp-launch__join__list">
+						<div class="lp-launch__join__step"><span>3</span></div>
+						<h3><strong>Concorra a uma</strong><span><strong>HERO10 Black + kit
+									exclusivo</strong></span>
+						</h3>
+						<p>Se cadastrou e seguiu a GoProBr? Basta torcer e aguardar o sorteio! Ainda tem dúvidas? Acesse o regulameto</p>
+						<div class="lp-launch__join__button regulamento lp-launch__join__button-regulamento">
+							Regulamento
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="premios" class="lp-launch__premio">
+			<div class="container">
+				<div class="lp-launch__premio__description">
+					<h3>Prêmio</h3>
+					<p>Concorra a uma <strong>HERO10 BLACK + Kit GoPro exclusivo</strong>:</p>
+					<p class="lp-launch__premio__label">1 moletom + 1 camiseta + 1 bandana + 1 the handler + 1 3-Way + 1 Jaws
+						and Gooseneck + 1 Chesty kids + adult</p>
+				</div>
+				<div class="lp-launch__premio__banner">
+					<picture>
+						<source media="(max-width: 720px)"
+							srcset="https://gopro.vteximg.com.br/arquivos/premios-sorteio-lp-mobile.png" />
+						<img src="https://gopro.vteximg.com.br/arquivos/premios-sorteio-lp.png" alt="" />
+					</picture>
+				</div>
+			</div>
+		</section>
+		<section id="calendario" class="lp-launch__calendario">
+			<div class="container">
+				<div class="lp-launch__calendario__title">
+					<h3>Calendário</h3>
+					<p>Fique de olho nas datas e acompanhe o cronograma do sorteio</p>
+				</div>
+				<div class="lp-launch__calendario__wrapper">
+					<div class="lp-launch__calendario__item">
+						<div class="lp-launch__calendario__item__title">Período de participação</div>
+						<img src="https://gopro.vteximg.com.br/arquivos/sorteio-22-calendario.png"
+							alt="Calendário do sorteio" />
+						<p><span>*até às 19h00 horário de Brasília</span>
+							<strong>12/08/2022</strong>
+
+						</p>
+					</div>
+					<div class="lp-launch__calendario__item lp-launch__calendario__item-sorteio">
+						<div class="lp-launch__calendario__item__title">Sorteio</div>
+						<img src="https://gopro.vteximg.com.br/arquivos/sorteio-22-calendario.png"
+							alt="Calendário do sorteio" />
+						<p><span>*Feito pela Loteria Federal</span>
+							<strong>13/08/2022</strong>
+						</p>
+					</div>
+					<div class="lp-launch__calendario__item">
+						<div class="lp-launch__calendario__item__title">Divulgação do ganhador</div>
+						<img src="https://gopro.vteximg.com.br/arquivos/sorteio-22-calendario.png"
+							alt="Calendário do sorteio" />
+
+						<p><span></span>
+							<strong>13/08/2022 </strong>
+						</p>
+					</div>
+				</div>
+				<div class="lp-launch__calendario__instagram">
+					<div><a href="https://www.instagram.com/goprobr/" target="_blank"><img
+								src="https://gopro.vteximg.com.br/arquivos/sorteio-22-yellow-ig.png?v=02"
+								alt="Instagram" /></a></div>
+					<p>Siga o <a href="https://www.instagram.com/goprobr/" target="_blank">@goprobr</a> no Instagram
+						<span>e acompanhe todas as novidades</span>
+					</p>
+				</div>
+			</div>
+		</section>
+		<section id="ganhadores" class="lp-launch__ganhador">
+			<div class="container">
+				<div class="lp-launch__ganhador__wrapper">
+					<h3 class="lp-launch__ganhador__title">Ganhador</h3>
+					<div class="lp-launch__ganhador__description">
+						<h4>Aguarde!</h4>
+						<p>A divulgação do ganhador <span>será realizada no dia 13/08/2022</span></p>
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<section class="lp-launch__site-promocional">
+			<div class="container">
+				<h3 class="lp-launch__site-promocional__title">
+					Acompanhe todas <span>as novidades na loja oficial</span>
+				</h3>
+				<div class="lp-launch__site-promocional__wrapper">
+					<div class="lp-launch__site-promocional__item">
+						<a href="https://www.goprobr.com/cameras" target="_blank">
+							<picture>
+								<source media="(max-width: 720px)"
+									srcset="https://gopro.vteximg.com.br/arquivos/card-cameras-lp-mobile.png" />
+								<img src="https://gopro.vteximg.com.br/arquivos/cameras-hero10-hero-9.png"
+									alt="Escolha ideal" />
+							</picture>
+						</a>
+					</div>
+					
+					<div class="lp-launch__site-promocional__item">
+						<a href="https://www.goprobr.com/gop-aphgm-001-voltatripecomcontroleremoto/p" target="_blank">
+							<picture>
+								<source media="(max-width: 720px)"
+									srcset="https://gopro.vteximg.com.br/arquivos/card-volta-energia-lp-mobile.png" />
+								<img src="https://gopro.vteximg.com.br/arquivos/card-volta-energia.png"
+									alt="Novidades" />
+							</picture>
+						</a>
+					</div>
+					<div class="lp-launch__site-promocional__item">
+						<a href="https://www.goprobr.com/gop-adbat-011-bateria-recarregavel-enduro-hero10-hero9/p"
+							target="_blank">
+							<picture>
+								<source media="(max-width: 720px)"
+									srcset="https://gopro.vteximg.com.br/arquivos/card-enduro-lp-mobile.png" />
+								<img src="https://gopro.vteximg.com.br/arquivos/card-enduro.png" alt="Top Acessórios" />
+							</picture>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="lp-launch__banner-footer">
+			<img src="https://gopro.vteximg.com.br/arquivos/banner-footer-lp.png" alt="Dia dos pais" />
+			<div class="lp-launch__banner-footer__description">
+				<p>Participação válida de 21/07/2022 a 12/08/2022 - 19h00 horário de Brasília. Consulte condições de
+					participação e regulamento completo <a href="">aqui</a>. Certificado de autorização SEAE/ME No
+					04.020995/2022. Imagens ilustrativas.
+				</p>
+			</div>
+		</section>
+
+
+
+	</main>
+
+	<div style="display:none!important">
+		<vtex.cmc:userLogin />
+	</div>
+
+
+
+	<div style="display:none!important">
+		<vtex.cmc:userLogin />
+	</div>
+
+	<footer class="lp-launch__footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 lp-launch__footer__wrapper">
+					<div class="lp-launch__footer__razao">
+						GoPro, HERO e seus respectivos logotipos são marcas comerciais ou marcas registradas da
+						GoPro,
+						Inc. nos Estados Unidos e em outros países. Todas as outras marcas
+						comerciais são de propriedade dos seus respectivos proprietários. © 2020 GoPro, Inc. Todos
+						os
+						direitos reservados. BR PARTNER EQUIPAMENTOS ELETRONICOS EIRELI
+						| CNPJ: 29.951.131/0001-36 – RODOVIA GOVERNADOR MÁRIO COVAS 10.600 – CARIACICA - ES
+					</div>
+					<ul class="lp-launch__footer__social">
+						<li>
+							<a href="https://www.instagram.com/goprobr/" target="_blank" title="Instagram">
+								<i class="sprite sprite-instagram-gray"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.facebook.com/GoProBrazil" target="_blank" title="Facebook">
+								<i class="sprite sprite-facebook-gray"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://br.pinterest.com/GoPro/" target="_blank" title="Pinterest">
+								<i class="sprite sprite-pinterest-gray"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.youtube.com/c/GoPro" target="_blank" title="Youtube">
+								<i class="sprite sprite-youtube-gray"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"
+		integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script type="module" src="/main.js"></script>
+	<!-- <script crossorigin="anonymous" src="https://agenciamagma.ecommercetools.com.br/sorteio-22.js?v=04"></script> -->
+	<!-- <script  crossorigin="anonymous" src="https://agenciamagma.ecommercetools.com.br/arquivos/index.js"></script> -->
+	<script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/proxy-polyfill@0.3.1/proxy.min.js"
+		integrity="sha256-aRX3NIXjCxT51wF6s9KHLiFrf5E0n1YzvDLAMzeAVzA=" crossorigin="anonymous"></script>
+
+</body>
+
+<style>
+   
+   .cookieConsentContainer {
+    z-index: 999;
+    width: 89vw;
+    min-height: 20px;
+    box-sizing: border-box;
+    padding: 6px 187px 15px 9px;
+    background: #232323;
+    border-radius: 20px;
+    overflow: hidden;
+    position: fixed;
+    bottom: 30px;
+    align-items: center;
+    right: 5%;
+    justify-content: space-around;
+    display: none;
+    }
+    .cookieConsentContainer .cookieTitle a {
+        font-family: OpenSans, arial, sans-serif;
+        color: #fff;
+        font-size: 22px;
+        line-height: 20px;
+        display: block;
+    }
+    .cookieConsentContainer .cookieDesc p {
+		margin: 0;
+		padding: 0;
+		font-family: OpenSans, arial, sans-serif;
+		color: #fff;
+		font-size: 13px;
+		line-height: 54px;
+		display: block;
+		margin-top: 10px;
+    }
+    .cookieConsentContainer .cookieDesc a {
+        font-family: OpenSans, arial, sans-serif;
+        color: #fff;
+        text-decoration: underline;
+    }
+    .cookieConsentContainer .cookieButton a {
+		display: inline-block;
+		font-family: OpenSans, arial, sans-serif;
+		color: #fff;
+		font-size: 14px;
+		font-weight: 700;
+		margin-top: 14px;
+		background: #00c853;
+		box-sizing: border-box;
+		border-radius: 20px;
+		padding: 8px 24px;
+		text-align: center;
+		transition: background 0.3s;
+
+    }
+    .cookieConsentContainer .cookieButton a:hover {
+        cursor: pointer;
+        background: #01642a;
+    }
+    @media (max-width: 980px) {
+        .cookieConsentContainer {
+            bottom: 0 !important;
+            left: 0 !important;
+            width: 100% !important;
+        }
+    }
+
+</style>
+
+<script>
+    var purecookieTitle = "",
+        purecookieDesc = "A ELG Store utiliza <strong>cookies</strong> para personalizar e melhorar a sua experiência. Ao navegar neste site, você concorda com a nossa",
+        purecookieLink = '<a href="https://www.elgstore.com.br/informacoes/privacidade-e-seguranca" target="_blank">Política de cookies</a>',
+        purecookieButton = "Entendi";
+    function pureFadeIn(e, o) {
+        var i = document.getElementById(e);
+        (i.style.opacity = 0),
+            (i.style.display = o || "flex"),
+            (function e() {
+                var o = parseFloat(i.style.opacity);
+                (o += 0.02) > 1 || ((i.style.opacity = o), requestAnimationFrame(e));
+            })();
+    }
+    function pureFadeOut(e) {
+        var o = document.getElementById(e);
+        (o.style.opacity = 1),
+            (function e() {
+                (o.style.opacity -= 0.02) < 0 ? (o.style.display = "none") : requestAnimationFrame(e);
+            })();
+    }
+    function setCookie(e, o, i) {
+        var t = "";
+        if (i) {
+            var n = new Date();
+            n.setTime(n.getTime() + 24 * i * 60 * 60 * 1e3), (t = "; expires=" + n.toUTCString());
+        }
+        document.cookie = e + "=" + (o || "") + t + "; path=/";
+    }
+    function getCookie(e) {
+        for (var o = e + "=", i = document.cookie.split(";"), t = 0; t < i.length; t++) {
+            for (var n = i[t]; " " == n.charAt(0); ) n = n.substring(1, n.length);
+            if (0 == n.indexOf(o)) return n.substring(o.length, n.length);
+        }
+        return null;
+    }
+    function eraseCookie(e) {
+        document.cookie = e + "=; Max-Age=-99999999;";
+    }
+    function cookieConsent() {
+        getCookie("purecookieDismiss") ||
+            ((document.body.innerHTML +=
+                '<div class="cookieConsentContainer" id="cookieConsentContainer"><div class="cookieTitle"><a>' +
+                purecookieTitle +
+                '</a></div><div class="cookieDesc"><p>' +
+                purecookieDesc +
+                " " +
+                purecookieLink +
+                '</p></div><div class="cookieButton"><a onClick="purecookieDismiss();">' +
+                purecookieButton +
+                "</a></div></div>"),
+            pureFadeIn("cookieConsentContainer"));
+    }
+    function purecookieDismiss() {
+        setCookie("purecookieDismiss", "1", 7), pureFadeOut("cookieConsentContainer");
+    }
+    window.onload = function () {
+        cookieConsent();
+    };
+</script>
+
+</html>
