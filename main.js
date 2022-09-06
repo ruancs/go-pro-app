@@ -8,7 +8,7 @@ import ScrollToArchor from './js/app/ScrollToArchor/ScrollToArchor'
 
 
 
-$(document).ready( ()=>{
+$(document).ready( function(){
   new RenderYoutube();
   new RegulamentoPopup();
   new FormValidate();
