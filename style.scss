@@ -3,6 +3,7 @@ $color-blue: #6ED3FE;
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
+
 .desktop-only {
     @media screen and (min-width:768px) {
         display: block !important;
@@ -137,7 +138,7 @@ $color-blue: #6ED3FE;
         background-size: inherit;
         background-position: 50% 40%;
         padding-top: 64rem;
-        max-height: 991px;
+        max-height: 822px;
 
         @media screen and (min-width:1460px){
             background-size: cover;
