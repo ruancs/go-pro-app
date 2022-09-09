@@ -3,6 +3,18 @@ $color-blue: #6ED3FE;
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 
 .desktop-only {
     @media screen and (min-width:768px) {
@@ -422,29 +434,24 @@ $color-blue: #6ED3FE;
             justify-content: flex-start;
             align-items: flex-start;
 
-
-            
-            strong{
-
-
-            }
-
-            p,
-            span {
+            p,span {
                 color: #fff;
+                padding: 10px;
+                text-align: center;
+                font-family: sohne-kraft,sans-serif;
+                font-size: 12px;
             }
 
             h3 {
-                font-size: 23px;
+                font-size: 21px;
                 text-transform: uppercase;
                 font-weight: 200;
-                margin: -1px;
-                font-family: "Sohne-kraft", monospace;
-                margin-bottom: 0;
+                margin: -1px -1px 0;
+                font-family: Sohne-kraft,monospace;
                 line-height: 1;
                 padding: 20px;
-                background-color: $color-blue;
-                color:#000000;
+                background-color: #6ed3fe;
+                color: #000;
 
                 @media (min-width: 768px) {
                     min-height: 82px
@@ -454,13 +461,16 @@ $color-blue: #6ED3FE;
             strong {
                 display: block;
                 align-items: center;
-                font-size: 35px;
-                font-family: "sohne-kraft", sans-serif;
-                background-color: $color-blue;
+                font-size: 49px;
+                -webkit-text-stroke-width: 0.4px;
+                -webkit-text-stroke-color: #000;
+                font-family: sohne-kraft,sans-serif;
+                color: #6ed3fe;
+                background-color: #6ed3fe;
                 margin-left: -2px;
                 margin-top: -2px;
                 margin-bottom: -2px;
-                padding: 20px;
+                padding: 9px;
             }
 
             p {
@@ -483,18 +493,31 @@ $color-blue: #6ED3FE;
 
         &__content{
 
-            &_q1{
+            &_q1, &_q2, &_q3{
                 display: flex;
                 flex-direction: column;
-                padding: 20px;
-                gap:20px;
+                padding: 12px;
+                gap: 20px;
+            
+                
 
                 &-opt{
                     display: flex;
+                    cursor: pointer;
                     flex-direction: row;
                     align-items: center;
                     border: solid 3px $color-blue;
 
+                }
+
+                .acertou{
+                    background-color: #006395;
+                    animation: aparecer 0.3s alternate; 
+                }
+
+                .errou{
+                    background-color: red;
+                    animation: aparecer 0.3s alternate; 
                 }
             }
 
@@ -733,7 +756,7 @@ $color-blue: #6ED3FE;
         }
 
         &__instagram {
-            margin-top: 25rem;
+            margin-top: 8rem;
             display: flex;
             margin-bottom: -83px;
             flex-direction: column;

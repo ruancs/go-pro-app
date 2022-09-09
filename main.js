@@ -13,8 +13,11 @@ $(document).ready( function(){
   new RegulamentoPopup();
   new FormValidate();
   new ShowPopup();  
-  new ScrollToArchor();  
+  new ScrollToArchor(); 
 })
+
+
+
 
 
 
