@@ -1,6 +1,8 @@
 # go-pro-app
-## Landing Page goPro
+## Landin Page goPro
 
-rodar projeto: npm run dev
+Landing page adaptada para promoção da Hero11 Black (goPro)
 
-modulos utilizados: vite.
+* Adição de quiz interativo antes da abertura de formulário. 
+
+
