@@ -48,7 +48,7 @@ function verificarResposta(clicked){
 	}
 	else if(resp == 7){
 		console.log("errou")
-		$('#7').toggleClass('errou')
+		$('#7').addClass('errou')
 		$('#7 strong').html('<img src="https://gopro.vteximg.com.br/arquivos/wrong.png" max-width="100%"  alt="">')
 		
 	}
@@ -58,10 +58,58 @@ function verificarResposta(clicked){
 		$('#8 strong').html('<img src="https://gopro.vteximg.com.br/arquivos/wrong.png" max-width="100%" alt="">')
 		
 	}
-	if ($( ".lp-launch__join__content_q1-opt" && ".lp-launch__join__content_q2-opt" && ".lp-launch__join__content_q3-opt").hasClass( "acertou" ))  {
+	if (
+		$(".lp-launch__join__content_q1-opt").hasClass( "acertou" )&& 
+		$(".lp-launch__join__content_q2-opt").hasClass( "acertou" )&&
+		$(".lp-launch__join__content_q3-opt").hasClass( "acertou" )){
 			console.log("parabens")
 			$('.lp-launch__form').addClass("active");
-			
-		  }
+	}else 
+	if (
+		$(".lp-launch__join__content_q1-opt").hasClass( "errou" )&& 
+		$(".lp-launch__join__content_q2-opt").hasClass( "errou" )&&
+		$(".lp-launch__join__content_q3-opt").hasClass( "errou" )){
+			console.log("parabens tambem")
+			$('.lp-launch__form').addClass("active");
+	}else
+	if (
+		$(".lp-launch__join__content_q1-opt").hasClass( "errou" )&& 
+		$(".lp-launch__join__content_q2-opt").hasClass( "acertou" )&&
+		$(".lp-launch__join__content_q3-opt").hasClass( "errou" )){
+			console.log("parabens tambem")
+			$('.lp-launch__form').addClass("active");
+	}
+	else
+	if (
+		$(".lp-launch__join__content_q1-opt").hasClass( "acertou" )&& 
+		$(".lp-launch__join__content_q2-opt").hasClass( "errou" )&&
+		$(".lp-launch__join__content_q3-opt").hasClass( "errou" )){
+			console.log("parabens tambem")
+			$('.lp-launch__form').addClass("active");
+	}
+	else
+	if (
+		$(".lp-launch__join__content_q1-opt").hasClass( "acertou" )&& 
+		$(".lp-launch__join__content_q2-opt").hasClass( "acertou" )&&
+		$(".lp-launch__join__content_q3-opt").hasClass( "errou" )){
+			console.log("parabens tambem")
+			$('.lp-launch__form').addClass("active");
+	}
+	else
+	if (
+		$(".lp-launch__join__content_q1-opt").hasClass( "errou" )&& 
+		$(".lp-launch__join__content_q2-opt").hasClass( "errou" )&&
+		$(".lp-launch__join__content_q3-opt").hasClass( "acertou")){
+			console.log("parabens tambem")
+			$('.lp-launch__form').addClass("active");
+	}
+	else
+	if (
+		$(".lp-launch__join__content_q1-opt").hasClass( "errou" )&& 
+		$(".lp-launch__join__content_q2-opt").hasClass( "acertou" )&&
+		$(".lp-launch__join__content_q3-opt").hasClass( "acertou" )){
+			console.log("parabens tambem")
+			$('.lp-launch__form').addClass("active");
+	}
 
-}
+	}

@@ -15,6 +15,18 @@ $color-blue: #6ED3FE;
     }
 }
 
+@keyframes reveal {
+    0% { 
+      opacity: 0;
+      transform: translate(0, -20%);
+    }
+    
+    100% {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+  }
+
 
 .desktop-only {
     @media screen and (min-width:768px) {
@@ -144,6 +156,8 @@ $color-blue: #6ED3FE;
 
 
     &__image-background {
+
+
         position: relative;
         background-color: black !important;
         display: block;
@@ -152,6 +166,14 @@ $color-blue: #6ED3FE;
         background-position: 50% 40%;
         padding-top: 64rem;
         max-height: 822px;
+
+        opacity: 0;
+        animation: reveal 0.5s ease-out;
+        animation-fill-mode: forwards;
+        
+        /* Javascript ativa a animação ao
+         mudar o valor para 'running'  */
+        animation-play-state: running;
 
         @media screen and (min-width:1460px){
             background-size: cover;
@@ -659,6 +681,7 @@ $color-blue: #6ED3FE;
 
     &__calendario {
         text-align: center;
+        
 
         &__wrapper {
             display: flex;
@@ -820,6 +843,7 @@ $color-blue: #6ED3FE;
                 }
             }
         }
+          
 
         &__description {
             margin-top: 3.5rem;
@@ -863,6 +887,7 @@ $color-blue: #6ED3FE;
                     font-size: 12px;
                 }
             }
+        
         }
 
     }
@@ -911,7 +936,7 @@ $color-blue: #6ED3FE;
     }
 
     &__banner-footer {
-        margin-top: 5rem;
+        margin-top: 1rem;
         text-align: center;
 
         &__description {
